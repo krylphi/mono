@@ -1,5 +1,7 @@
 package utils
 
+import "strings"
+
 func Print(s string) {
-	println(s)
+	println(strings.Join([]string{s, "-v0-"}, "|"))
 }
